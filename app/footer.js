@@ -9,7 +9,7 @@ export function createFooter() {
             <h4>LOGO HERE</h4>
         </div>
         <div class="col-md-4">
-            <h4>Kontakt</h4>
+            <h4>Contact</h4>
             <ul class="list-unstyled">
                 <li><a href="mailto:mtlubins@live.com.com">mtlubins@live.com</a></li>
                 <li>531-001-163</li>
