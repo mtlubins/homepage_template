@@ -1,0 +1,41 @@
+//Colors
+$slider-description-background: rgba(44,50,48, 0.5);
+$dirty-white: #F7F7F7;
+$footer-background: #3F125A;
+//Fonts
+$font-open-sans: "Open Sans";
+$font-common-size: 15px;
+$font-semi-headers-size: 28px;
+
+//variables
+$infinity: -1;
+// Devices
+$device-xs: (start: 0px, end: 319px); // smartphone
+$device-sm: (start: 320px, end: 575px); // medium smartphone
+$device-md: (start: 576px, end: 767px); // big smartphone
+$device-lg: (start: 768px, end: 1023px); // tablet
+$device-xl: (start: 1024px, end: 1199px); // desktop-small
+$device-xxl: (start: 1200px, end: 1399px); // desktop-1
+$device-xxxl: (start: 1400px, end: $infinity); // desktop-2
+
+
+@mixin respondFromTo($deviceFrom, $deviceTo: null) {
+    $start: map-get($deviceFrom, start);
+    $end: $infinity;
+
+    @if ($deviceTo) {
+        $end: map-get($deviceTo, end);
+    } @else {
+        $end: map-get($deviceFrom, end);
+    }
+
+    @if $end == $infinity {
+        @media (min-width: $start) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $start) and (max-width: $end) {
+            @content;
+        }
+    }
+}

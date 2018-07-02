@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./slider.scss";
+@import "footer.scss";
+@import "custom";
+html {
+  box-sizing: border-box;
+}
+
+body, .main-container {
+  margin: 0;
+  padding: 0;
+  font-family: $font-open-sans;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#custom-homepage {
+  margin: 50px auto;
+  .row {
+    margin-right: 0;
+  }
+}

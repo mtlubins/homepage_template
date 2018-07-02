@@ -1,0 +1,42 @@
+@import "custom";
+footer {
+  color: $dirty-white;
+  background-color: $footer-background;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  font-family: $font-open-sans;
+
+  .footer-container {
+    width: 100%;
+    margin: 0 auto;
+
+    .col-md-4 {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    ul > li {
+      margin-bottom: 10px;
+    }
+
+    li a {
+      line-height: 12px;
+      text-decoration: none;
+      color: $dirty-white;
+    }
+
+    .social-media-item {
+      display: inline;
+      color: $dirty-white;
+      text-decoration: none;
+      font-size: 28px;
+      padding: 0 5px;
+    }
+  }
+}
