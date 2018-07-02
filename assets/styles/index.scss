@@ -18,6 +18,9 @@ body, .main-container {
 
 #custom-homepage {
   margin: 50px auto;
+  @include respondFromTo($device-md) {
+    margin: 0 auto;
+  }
   .row {
     margin-right: 0;
   }

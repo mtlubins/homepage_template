@@ -6,9 +6,11 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    
-    @include respondFromTo($device-xs,$device-md) {
-        height: 30vh; 
+    @include respondFromTo($device-xs,$device-sm) {
+        height: 35vh;
+    }
+    @include respondFromTo($device-md) {
+        height: 50vh;
     }
 
     .slide {
